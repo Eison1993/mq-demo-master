@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <context:property-placeholder properties-ref="commonProperties"/>
+    <bean id="commonProperties"
+          class="org.springframework.beans.factory.config.PropertiesFactoryBean">
+        <property name="properties">
+            <props>
+                <prop key="AccessKey">4srvkOjM7M9K8qms</prop> <!-- 使用前请修改这些资源信息 -->
+                <prop key="SecretKey">AaMuwOxJUH04EpOxBksF2ISm5HJZt5</prop>
+                <prop key="GROUP_ID">GID-acewill-dts-beta</prop>
+                <prop key="Topic">acewill-dts-beta</prop>
+                <prop key="NAMESRV_ADDR">http://onsaddr.mq-internet-access.mq-internet.aliyuncs.com:80</prop>
+            </props>
+        </property>
+    </bean>
+</beans>
